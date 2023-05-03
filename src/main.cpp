@@ -1,3 +1,4 @@
+// Copyright 2023 UNN-IASR //ND
 #include <iostream>
 #include <string>
 #include "Automata.h"

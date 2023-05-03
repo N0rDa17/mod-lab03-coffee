@@ -12,11 +12,9 @@ int main() {
         drinking_machine.cook();
         drinking_machine.finish();
     }
-    
-    else{
+    else {
     drinking_machine.cancel();
     }
-    
     drinking_machine.off();
     return 0;
 }

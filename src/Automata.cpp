@@ -30,8 +30,7 @@ void Automata::on() {
         getState();
     }
     else {
-        throw domain_error("Error! Incorrect operation.");
-    }
+        throw domain_error("Error! Incorrect operation.");}
 }
 
 void Automata::off() {
@@ -39,9 +38,7 @@ void Automata::off() {
         state = OFF;
         getState();
     }
-    else {
-        throw domain_error("Error! Incorrect operation.");
-    }
+    else {throw domain_error("Error! Incorrect operation.");}
 }
 
 void Automata::coin(int money) {
@@ -53,9 +50,7 @@ void Automata::coin(int money) {
         cash += money;
         getState();
     }
-    else {
-        throw domain_error("Error! Incorrect operation.");
-    }
+    else {throw domain_error("Error! Incorrect operation.");}
 }
 
 void Automata::cancel() {
@@ -65,9 +60,7 @@ void Automata::cancel() {
         getCash();
         getState();
     }
-    else {
-        throw domain_error("Error! Incorrect operation.");
-    }
+    else {throw domain_error("Error! Incorrect operation.");}
 }
 
 void Automata::choice(int menu_position) {
@@ -80,9 +73,7 @@ void Automata::choice(int menu_position) {
         cout << "Your choice is " << menu[DrinkOption - 1] << endl;
         getState();
     }
-    else {
-        throw domain_error("Error! Incorrect operation.");
-    }
+    else {throw domain_error("Error! Incorrect operation.");}
 }
 
 bool Automata::check() {
@@ -93,9 +84,7 @@ bool Automata::check() {
         getState();
         return false;
     }
-    else {
-        throw domain_error("Error! Incorrect operation.");
-    }
+    else {throw domain_error("Error! Incorrect operation.");}
 }
 
 void Automata::cook() {
@@ -105,9 +94,7 @@ void Automata::cook() {
         getCash();
         getState();
     }
-    else {
-        throw domain_error("Error! Incorrect operation.");
-    }
+    else {throw domain_error("Error! Incorrect operation.");}
 }
 
 void Automata::finish() {
@@ -116,9 +103,7 @@ void Automata::finish() {
         getCash();
         getState();
     }
-    else {
-        throw domain_error("Error! Incorrect operation.");
-    }
+    else {throw domain_error("Error! Incorrect operation.");}
 }
 
 int Automata::getCash() {

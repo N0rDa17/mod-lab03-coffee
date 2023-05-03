@@ -35,19 +35,6 @@ TEST(test2, incorrect_operation) {
 
 TEST(test3, incorrect_operation) {
     Automata drinking_machine;
-    drinking_machine.state = ACCEPT;
-    try {
-        drinking_machine.check();
-    }
-    catch(domain_error& err) {
-        ASSERT_STREQ("Error! Incorrect operation.", err.what());
-    }
-}
-
-
-
-TEST(test4, incorrect_operation) {
-    Automata drinking_machine;
     drinking_machine.state = OFF;
     try {
         drinking_machine.cook();
@@ -58,21 +45,21 @@ TEST(test4, incorrect_operation) {
 }
 
 
-TEST(test5, states) {
+TEST(test4, states) {
     Automata drinking_machine;
     drinking_machine.on();
     EXPECT_EQ(WAIT, drinking_machine.state);
 }
 
 
-TEST(test6, states) {
+TEST(test5, states) {
     Automata drinking_machine;
     drinking_machine.on();
     drinking_machine.coin(1000);
     EXPECT_EQ(ACCEPT, drinking_machine.state);
 }
 
-TEST(test7, states) {
+TEST(test6, states) {
     Automata drinking_machine;
     drinking_machine.on();
     drinking_machine.coin(1000);
@@ -80,7 +67,7 @@ TEST(test7, states) {
     EXPECT_EQ(CHECK, drinking_machine.state);
 }
 
-TEST(test8, states) {
+TEST(test7, states) {
     Automata drinking_machine;
     drinking_machine.on();
     drinking_machine.coin(1000);

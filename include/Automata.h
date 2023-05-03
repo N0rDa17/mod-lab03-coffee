@@ -7,16 +7,19 @@ enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
 using std::string;
 
 class Automata {
-    public:
+ public:
     STATES state;  // - текущее состояние автомата
     int cash;  // - для хранения текущей суммы
-    const string menu[10] = {"Espresso", "Americano", "Cappuccino", "Latte", "FlatWhite",
-    "Macchiato", "BlackTea", "GreenTea", "Cacao", "HotChocolate"};
+    const string menu[10] = {"Espresso", "Americano",
+    "Cappuccino", "Latte",
+    "FlatWhite","Macchiato",
+    "BlackTea", "GreenTea",
+    "Cacao", "HotChocolate"};
     int DrinkOption;  // - выбор напитка
     const int prices[10] = {80, 100, 150, 180, 160,
     190, 120, 120, 140, 170};
 
-    public:
+ public:
     Automata();
     void on();  // - включение автомата
     void off();  // - выключение автомата

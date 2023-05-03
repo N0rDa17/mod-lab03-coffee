@@ -6,7 +6,7 @@
 #include <string>
 #include "Automata.h"
 
-sing std::invalid_argument;
+using std::invalid_argument;
 using std::domain_error;
 
 

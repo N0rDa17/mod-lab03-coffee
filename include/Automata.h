@@ -13,7 +13,7 @@ class Automata {
     int cash;  // - для хранения текущей суммы
     const string menu[10] = {"Espresso", "Americano",
     "Cappuccino", "Latte",
-    "FlatWhite","Macchiato",
+    "FlatWhite", "Macchiato",
     "BlackTea", "GreenTea",
     "Cacao", "HotChocolate"};
     int DrinkOption;  // - выбор напитка
